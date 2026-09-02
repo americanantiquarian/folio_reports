@@ -1,6 +1,6 @@
 --metadb:function budget_snapshot
 
-drop function if exists budget_snapshot
+drop function if exists budget_snapshot;
 create function budget_snapshot(
 	FY_code text default 'FY2027'
 )
