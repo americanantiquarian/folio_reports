@@ -48,7 +48,7 @@ as $$
 		on bud.id = gffy.budget_id::uuid
 	inner join folio_finance.groups__t gps
 		on gffy.group_id::uuid = gps.id
-	where lower(bud.name) like '%-'||lower(FY_code)
+	where lower(bud."name") like '%-'||lower(FY_code)
 	order by FundGroup, FundName;
 $$
 language sql
