@@ -1,0 +1,13 @@
+{
+    "displayName": "Acquisitions: Budget Snapshot for Fiscal Year",
+    "description": "Reports summary information for all fund budgets for the specified fiscal year, sorted by fund group",
+    "instructions": "Enter one of the listed fiscal year codes exactly:",
+    "parameters": [
+        {
+            "name": "FY_code",
+            "displayName": "Enter fiscal year code (FY2026, FY2027)",
+            "type": "text",
+            "required": true
+        }
+    ]
+}
