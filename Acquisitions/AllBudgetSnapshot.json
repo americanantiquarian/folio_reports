@@ -10,7 +10,7 @@
             "controlled.options": [
 			    "FY2026",
 				"FY2027"
-			]
+			],
             "required": true
         }
     ]
