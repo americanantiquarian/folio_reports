@@ -8,8 +8,8 @@
             "displayName": "Select fiscal year code:",
             "type": "text",
             "controlled.options": [
-			    'FY2026',
-				'FY2027'
+			    "FY2026",
+				"FY2027"
 			]
             "required": true
         }
