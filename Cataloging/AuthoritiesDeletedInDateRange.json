@@ -1,0 +1,19 @@
+{
+	"displayName": "Cataloging: Authorities Deleted in Date Range",
+	"description": "Lists headings and vocabulary id number for authority records deleted in the specified range of dates (inclusive)",
+	"instructions": "Enter a starting and ending date. Enter dates as a 4-digit year, a hyphen, a 2-digit month, a hyphen and a 2-digit day. Example: 2027-04-01",
+	"parameters": [
+		{
+			"name": "start_date",
+			"displayName": "Enter the starting date:",
+			"type": "text",
+			"required": true
+		},
+		{
+			"name": "end_date",
+			"displayName": "Enter the ending date:",
+			"type": "text",
+			"required": true
+		}
+	]
+}
