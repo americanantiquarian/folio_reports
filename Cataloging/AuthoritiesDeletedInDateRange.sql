@@ -2,7 +2,7 @@
 
 drop function if exists auth_deletes_by_dates;
 create function auth_deletes_by_dates(
-	start_date text
+	start_date text,
 	end_date text
 )
 returns table(
