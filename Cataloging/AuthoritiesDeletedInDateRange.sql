@@ -8,7 +8,8 @@ create function auth_deletes_by_dates(
 returns table(
 	tag text,
 	heading text,
-	voc_id text
+	voc_id text,
+	subj_use text
 )
 as $$
 	select distinct ads.heading_type_old as tag,
