@@ -4,4 +4,4 @@ Reports intended for use by Acquisitions staff.
 
 + *AllBudgetSnapshot*<br/>
 Summary of activity for all funds for a fiscal year, sorted by Fund Group and Fund Name.<br/>
-Input parameters: Fiscal Year Code
+Input parameters: Fiscal Year Code -- Temporarily removed for revisions
