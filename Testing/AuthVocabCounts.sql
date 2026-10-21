@@ -3,8 +3,8 @@
 drop function if exists auth_vocab_counts;
 create function auth_vocab_counts()
 returns table(
-	vocab,
-	auth_count
+	vocab text,
+	auth_count integer
 )
 as $$
 	select asf.name as vocab,
