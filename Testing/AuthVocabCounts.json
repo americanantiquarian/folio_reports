@@ -1,6 +1,4 @@
 {
 	"displayName": "Statistics: Authority Vocabulary Counts",
-	"description": "Lists counts of Authority records in the catalog for each vocabulary. The final (unlabelled) count is the total number of Authority records.",
-	"instructions": "",
-	"parameters": []
+	"description": "Lists counts of Authority records in the catalog for each vocabulary. The final (unlabelled) count is the total number of Authority records."
 }
