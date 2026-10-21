@@ -14,10 +14,7 @@ as $$
 			on mt.instance_id = rl.external_id 
 	where mt.field = '000' and substring(mt."content", 7, 1) <> 'z'
 		and rl.state ='ACTUAL'
-	group by grouping sets (
-		(bib_format),
-		()
-	)
+	group by (bib_format)
 	order by bib_format;
 $$
 language sql
