@@ -1,6 +1,0 @@
-{
-	"displayName": "Statistics: Bib Record Counts by Leader Format (06-07)",
-	"description": "Lists count of bib records for each combination of Leader positions 06 and 07 (Desc and ELvl). This report uses the marc_t table which is updated less frequently than other tables.",
-	"instructions": "",
-	"parameters": []
-}
