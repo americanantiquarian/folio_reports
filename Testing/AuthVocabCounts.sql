@@ -8,7 +8,7 @@ returns table(
 )
 as $$
 	select asf.name as vocab,
-		to_char(count(a.id), '999,999') as auth_count
+		to_char(count(a.id), 'MI999,999') as auth_count
 	from folio_entities_links.authority a
 		inner join folio_entities_links.authority_source_file asf
 			on a.source_file_id = asf.id	
