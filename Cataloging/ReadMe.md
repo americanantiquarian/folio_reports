@@ -4,6 +4,8 @@ Reports intended for use by Cataloging staff.
 
 + *AuthVocabCounts*<br/>
 Lists counts of Authority records in the catalog for each vocabulary in use with the total number of records.
++ *AuthoritiesDeletedInDateRange*<br/>
+Lists headings and vocabulary id number for authority records deleted in the specified range of dates (inclusive)
 + *MetadbRefreshTimes*<br/>
 Lists the tables in Metadb which are refreshed less frequently, along with the start and end times for their last update. This includes the marc__t table, which refreshes approximately once an hour, and all tables in the folio_derived schema, which are refreshed overnight.
    - Folio Reporting does not correctly interpret the *timestamptz* data type, so the UTC offset is hard-coded into this query and will require manual editing when switching between Standard and Daylight Savings time
