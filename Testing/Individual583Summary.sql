@@ -7,8 +7,8 @@ create function individual_583_summary(
 	end_date text
 )
 returns table(
-	activity,
-	bib_count
+	activity text,
+	bib_count integer
 )
 as $$
 	with cat_act as (
