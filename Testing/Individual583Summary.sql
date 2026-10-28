@@ -12,7 +12,7 @@ returns table(
 )
 as $$
 	with cat_act as (
-		select rl.external_hrid as hrid,
+		select rl.external_hrid as bib_id,
 			trim(both '"' from jsonb_path_query(mrl."content", '$.fields[*]."583".subfields[*]."a"')::text) as activity,
 			trim(both '"' from jsonb_path_query(mrl."content", '$.fields[*]."583".subfields[*]."c"')::text) as act_date,
 			trim(both '"' from jsonb_path_query(mrl."content", '$.fields[*]."583".subfields[*]."k"')::text) as cataloger
@@ -24,7 +24,7 @@ as $$
 			and rl.record_type = 'MARC_BIB'
 	)
 	select cat_act.activity as activity,
-		count(cat_act.hrid) as bib_count
+		count(cat_act.bib_id) as bib_count
 	from cat_act
 	where cat_act.cataloger = op_code
 		and cat_act.act_date >= start_date
