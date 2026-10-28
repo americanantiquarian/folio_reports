@@ -29,10 +29,7 @@ as $$
 	where cat_act.cataloger = op_code
 		and cat_act.act_date >= start_date
 		and cat_act.act_date <= end_date
-	group by grouping sets (
-		(activity),
-		()
-	)
+	group by activity
 	order by activity;
 $$
 language sql
