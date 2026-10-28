@@ -23,7 +23,7 @@ as $$
 			and rl.__current = true
 			and rl.record_type = 'MARC_BIB'
 	)
-	select cat_act.activity,
+	select cat_act.activity as activity,
 		count(cat_act.hrid) as bib_count
 	from cat_act
 	where cat_act.cataloger = op_code
