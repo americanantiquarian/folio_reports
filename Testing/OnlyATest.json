@@ -1,0 +1,6 @@
+{
+	"displayName": "ZZTesting: Only A Test",
+	"description": "A spot to test short code snippets to pin-point where a report is going wrong.",
+	"instructions": "Only run if you enjoy strange error messages.",
+	"parameters": []
+}
