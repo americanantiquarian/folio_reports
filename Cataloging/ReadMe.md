@@ -9,7 +9,7 @@ Lists headings and vocabulary id number for authority records deleted in the spe
 + *CallNumberGenerators*<br/>
 Lists all call number generators currently enabled for use in the Inventory app.
 + *Individual583Summary*<br/>
-Lists counts of bibliographic records for each value of 583 $a (Action) for the specified cataloger in the specified date range
+Lists counts of bibliographic records for each value of 583 $a (Action) for the specified cataloger in the specified date range.<br/>
 Inputs: Cataloger's code used in 583 subfield $k (Action agent) and starting and ending dates to compare to 583 subfield $c (Time/date of action)
 + *MetadbRefreshTimes*<br/>
 Lists the tables in Metadb which are refreshed less frequently, along with the start and end times for their last update. This includes the marc__t table, which refreshes approximately once an hour, and all tables in the folio_derived schema, which are refreshed overnight.
