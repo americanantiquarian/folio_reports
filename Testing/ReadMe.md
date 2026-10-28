@@ -2,6 +2,5 @@ Reports being tested
 
 ## Contents
 
-+ *AllBudgetSnapshot*<br/>
-Summary of activity for all funds for a fiscal year, sorted by Fund Group and Fund Name.<br/>
-Input parameters: Fiscal Year Code -- Temporarily removed for revisions
++ *OnlyATest*<br/>
+Hopefully the only permanent resident, this is a spot to test small pieces of a report that's going wrong.
