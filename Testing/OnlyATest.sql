@@ -1,14 +1,14 @@
---metadb:function crash_test_dummy
+--metadb:function only_a_test
 
-drop function if exists crash_test_dummy;
-create function crash_test_dummy()
+drop function if exists only_a_test;
+create function only_a_test()
 returns table(
 	bib_id,
 	activity
 )
 as $$
 	select rl.external_hrid as bib_id,
-		trim(both '"' from jsonb_path_query(mrl."content", '$.fields[*]."583".subfields[*]."a"')::text) as activity,
+		jsonb_path_query(mrl."content", '$.fields[*]."583".subfields[*]."a"')::text as activity,
 	from folio_source_record.marc_records_lb mrl 
 	inner join folio_source_record.records_lb rl
 		on mrl.id = rl.id
