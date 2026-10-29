@@ -9,7 +9,8 @@ returns table(
 	tag text,
 	heading text,
 	voc_id text,
-	subj_use text
+	subj_use text,
+	username text
 )
 as $$
 	select distinct ads.heading_type_old as tag,
