@@ -21,9 +21,12 @@ as $$
 			on ads.authority_id  = rl.external_id 
 		inner join folio_source_record.marc_records_lb__ mrl 
 			on rl.id = mrl.id 
+		left join folio_users.users__t ut
+			on rl.updated_by_user_id = ut.id
 	where ads.updated_at::date >= start_date::date
 		and ads.updated_at::date <= end_date::date
 		and ads."action" = 'DELETE'
+		and ut.username <> 'BSLW2020'
 	order by heading;
 $$
 language sql
